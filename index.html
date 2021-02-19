@@ -1,45 +1,40 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Face Recognition</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Hand Gesture</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+    </head>
 
-   <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="container">
 
-  </head>
+            <center>
+                <h3 class="btn btn-info title">Hand Gesture App
+                    <br>
+                    <span>&#128077;</span>
+                    <span>&#128071;</span>
+                    <span>&#128075;</span>
+                    <span>&#128076;</span>
+                    <span>&#128078;</span>
+                    <span>&#129304;</span>
+                </h3>
+                <br>
+                <br>
 
-
-  <body>
-      <div class="container">
-          <center>
-              <h3 class="btn btn-default heading">Face Recognition</h3>
-
-              <br>
-              <br>
-
-              <p style="-fontsize: 22px">Model is to identify the following object : </p>
-              <div id="father" class="btn btn-primary">Father</div>
-              <div id="mother" class="btn btn-primary">Mother</div>
-              <div id="sister" class="btn btn-primary">Sister</div>
-              <div id="me" class="btn btn-primary">Me</div>
-              <label>Webcam View - </label>
-      <div id="camera"></div>
-      <br><br>
-        <div id="result"></div>
-      <br><br>
-      <button onclick="capture()" class="btn btn-info">Capture Image</button>
-      <br><br>
-      <button onclick="identify()" class="btn btn-success">Identify Image</button>
-      <br><br>
-
-      <p style="font-size: 22px;">Member : <span id="object"></span> </p>
-      <p style="font-size: 22px;">Accuracy : <span id="accuracy"></span> </p>
-          </center>
-      </div>
-  </body>
+                <p style="font-size: 25px;">Take a selfie of a gesture to know about its' s meaning</p>
+                <br>
+                <b>On the following gestures the model is trained</b>
+            </center>
+            <!--https://teachablemachine.withgoogle.com/models/wgTi8Nmaf/-->
+        </div>
+    </body>
+</html>
